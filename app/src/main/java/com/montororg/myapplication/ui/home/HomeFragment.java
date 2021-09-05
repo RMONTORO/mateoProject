@@ -37,7 +37,7 @@ public class HomeFragment extends Fragment {
         View miVista = binding.getRoot();
 
         miTexto = miVista.findViewById(R.id.texto);
-        cambiarTexto("Texto de inicio en la app");
+        //cambiarTexto("Texto de inicio en la app");
 
         ImageView botoncito = miVista.findViewById(R.id.imagen2);
         botoncito.setOnClickListener(myListener);
