@@ -36,11 +36,11 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View miVista = binding.getRoot();
 
-        miTexto = miVista.findViewById(R.id.texto);
+        //miTexto = miVista.findViewById(R.id.texto);
         //cambiarTexto("Texto de inicio en la app");
 
-        ImageView botoncito = miVista.findViewById(R.id.imagen2);
-        botoncito.setOnClickListener(myListener);
+        //ImageView botoncito = miVista.findViewById(R.id.imagen2);
+        //botoncito.setOnClickListener(myListener);
 
         linearLayout = miVista.findViewById(R.id.linearlayout2);
 
