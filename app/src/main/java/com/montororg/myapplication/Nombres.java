@@ -1,5 +1,7 @@
 package com.montororg.myapplication;
 
+//Esta es una clase, cuando instancias esta clase se crea un objeto Nombre
+
 public class Nombres {
 
 // se declaran dos variables tipo string para los nombres y int para carreras
