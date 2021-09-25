@@ -17,13 +17,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:background="@color/white"
+        android:background="@color/material_on_background_disabled"
         android:orientation="horizontal">
 
 
-
-
-
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Listacarreras"
+            tools:listitem="@layout/lista_carreras"/>
     </LinearLayout>
 
 

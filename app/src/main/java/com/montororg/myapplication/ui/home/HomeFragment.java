@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -28,13 +29,27 @@ public class HomeFragment extends Fragment {
     private TextView miTexto;
     private LinearLayout linearLayout;
 
+
+    ListView lista;
+
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+
+        int[] imagenid = {R.drawable.electronic,R.drawable.industrial,R.drawable.mecanica,R.drawable.sistemas};//se acomodan en un aray de 1x1 se asignan por nombre
+        //desde la carpeta drawable
+
+        String[] nombress= {"Electronica","Instrustrial","Mecanica","Sistemas"};
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View miVista = binding.getRoot();
+
+        lista = miVista.findViewById(R.id.Listacarreras);
+        miAdaptador miAdaptador = new miAdaptador(getContext(),nombress, imagenid);
+
+        lista.setAdapter(miAdaptador);
+
+
 
         //miTexto = miVista.findViewById(R.id.texto);
         //cambiarTexto("Texto de inicio en la app");
@@ -43,10 +58,6 @@ public class HomeFragment extends Fragment {
         //botoncito.setOnClickListener(myListener);
 
         linearLayout = miVista.findViewById(R.id.linearlayout2);
-
-
-
-
 
         return miVista;
     }

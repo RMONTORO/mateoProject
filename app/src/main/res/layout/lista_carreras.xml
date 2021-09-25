@@ -11,41 +11,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="147dp" />
+        app:layout_constraintGuide_begin="146dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="194dp" />
+        app:layout_constraintGuide_begin="269dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="93dp" />
+        app:layout_constraintGuide_begin="77dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="50dp" />
+        app:layout_constraintGuide_begin="16dp" />
 
 
     <ImageView
         android:id="@+id/imgcareer"
         android:layout_width="275dp"
         android:layout_height="174dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline11"
-        app:layout_constraintVertical_bias="0.451"
-        app:srcCompat="@drawable/electronic"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintVertical_bias="0.151"
+        app:srcCompat="@drawable/electronic" />
 
     <TextView
         android:id="@+id/career"
